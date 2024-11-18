@@ -1,0 +1,34 @@
+
+.logo-container {
+    text-align: center;
+}
+.logo-img {
+    height: 250px;
+}
+
+
+.nav-link {color: #ff76a8;}
+
+.cartwidget{
+    display: flex;
+    align-items: center;
+    .icon-cart{
+        font-size: 30px;
+    }
+    .cart-number{font-size: 20px;
+     color:   #ff76a8;
+    }
+}
+
+li {
+    font-size: x-large;
+}
+
+li {
+    justify-content: space-around;
+}
+
+ul {
+    background-color: rgb(245, 228, 237);
+    padding: 10px;
+}
