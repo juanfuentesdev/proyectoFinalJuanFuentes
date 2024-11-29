@@ -16,7 +16,7 @@ function App() {
       //    <div className='logo-container'><img className="logo-img" src="" alt="Logo" /> </div>
       
       <div className='container-app'>
-        <div className='logo-container'><img className="logo-img" src="../public/ktienda.png" alt="Logo" /> </div>
+        <div className='logo-container'><img className="logo-img" src="../ktienda.png" alt="Logo" /> </div>
         <BrowserRouter>
         <CartProvider> 
           <NavBar/>

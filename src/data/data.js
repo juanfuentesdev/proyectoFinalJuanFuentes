@@ -4,8 +4,8 @@ const products= [
         name: "Vestido Rojo",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, cupiditate? Repudiandae eveniet necessitatibus quisquam accusamus dolorem esse ullam, iste molestias recusandae illo hic eaque non architecto aspernatur rerum saepe consequuntur!",
         stock: 10,
-        price: 2000,
-        image: "/img/vestidoRojo.jpg",
+        price: 200,
+        image: ",
         category: "vestidos"
     },
     {
@@ -66,6 +66,7 @@ const products= [
         }
     })
 */
+
 
 const getProducts = ()=>{
     return new Promise ((resolve, reject ) => {

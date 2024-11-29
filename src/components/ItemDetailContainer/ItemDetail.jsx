@@ -27,7 +27,7 @@ const addProduct = (count) => {
                     <ItemCount stock={product.stock} addProduct={addProduct}/>
 
                 ): (
-                    <Link to="/cart">Terminar mi compra</Link>
+                    <Link to="/cart" className="btn-item">Terminar mi compra</Link>
                 )
 
             
