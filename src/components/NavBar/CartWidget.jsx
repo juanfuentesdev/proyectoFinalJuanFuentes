@@ -11,9 +11,13 @@ const CartWidget = () => {
 
     return (
         <Link to= "/cart" className="cartwidget"  >
-            <TbShoppingCart className="icon-cart" color="#ff76a8"/>
-            <p className="cart-number">{ quantity >= 1 && quantity }</p>
+            <TbShoppingCart className={ quantity === 0 ? "empty-cart" : "icon-cart" } color="#ff76a8"/>
+            <p className="cart-number">{ quantity >= 1 && quantity } </p>
             </Link>
     )
 }
+
+//className="icon-cart" 
 export default CartWidget
+
+

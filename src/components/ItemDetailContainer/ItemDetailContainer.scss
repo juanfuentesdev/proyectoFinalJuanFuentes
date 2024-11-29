@@ -50,12 +50,15 @@
         display: inline-block; 
         margin-top: 15px; 
         padding: 10px 20px; 
+        margin: 15px;
         background-color: #f579b7; 
         color: white; 
         text-decoration: none; 
         border-radius: 5px; 
         transition: background-color 0.3s ease; 
   
+
+    
 
         &:hover {
           background-color: #af0060; 
