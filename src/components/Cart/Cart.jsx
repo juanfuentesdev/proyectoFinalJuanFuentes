@@ -21,22 +21,26 @@ const Cart = () => {
     return (
         <div>
             <h2>Productos en el carrito</h2>
+            <div className="cards-container-cart">
             {
                 cart.map ((productCart)=> (
-                    <div key={productCart.id}>
-                        <img src={productCart.image}  alt="" />
-                        <p>{productCart.name}</p>                       
-                        <p>Cantidad: {productCart.quantity}</p>
-                        <p>Precio c/u: {productCart.price}</p>
-                        <p>Precio parcial: {productCart.quantity * productCart.price}</p>
-                        
-                        <button onClick={ () =>  deleteProductById (productCart.id)}>Borrar producto</button>
+                    <div className="card-producto" key={productCart.id}>
+                        <img className="img-cart" src={productCart.image}  alt="" />
+                        <p className="p-cart">{productCart.name}</p>                       
+                        <p className="p-cart">Cantidad: {productCart.quantity}</p>
+                        <p className="p-cart">Precio c/u: {productCart.price}</p>
+                        <p className="p-cart">Precio parcial: {productCart.quantity * productCart.price}</p>
+                        <button className="boton-borrar-producto" onClick={ () =>  deleteProductById (productCart.id)}>Borrar producto</button>
+                        <Link to= "/checkout">Terminar mi compra</Link>
                     </div>  
-
                 ))
             }
-            <p>Precio total: {totalPrice()} </p>
-            <button onClick={deleteCart} >Borrar todo el carrito</button>
+            </div>
+
+            <div className="total-y-borrar" >
+                <p className="p-total">Precio total: {totalPrice()} </p>
+                <button className="boton-borrar-todo" onClick={deleteCart} >Borrar todo el carrito</button>
+            </div>
         </div>
     )
 }

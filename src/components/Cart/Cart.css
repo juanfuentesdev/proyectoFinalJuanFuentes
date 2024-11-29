@@ -1,9 +1,90 @@
-.img { 
-    width: 400px;}
+    h2{
+        color: #ff76a8;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .cards-container-cart {
+        display:block; 
+        background-color:  rgb(245, 228, 237);
+        border: 1px solid #ff99d8;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        color:#e05abf;
 
-.div {
-    display: flex;
-    justify-content: space-around;
+        
 
 
+    }
+
+
+    .card-producto {
+    display:block;
+    text-align:left;
+    }
+
+    .img-cart {
+        width: 250px;
+        height: 250px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .p-cart {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+
+
+    
+    .boton-borrar-producto {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: #f579b7; 
+        color: white; 
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+            background-color: #b10000;
+    }
+    }
+
+    .total-y-borrar{
+        display: flex;
+        justify-content: right; 
+        padding-right: 18%;
+
+        background-color:  rgb(245, 228, 237);
+        border: 1px solid #ff99d8;
+        border-radius: 10px;
+        overflow: hidden;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+    }
+    .p-total {
+        color:#e023b1;
+        font-size: 20px;
+    }
+
+    .boton-borrar-todo {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        padding: 8px 16px;
+        background-color: #f579b7; 
+        color: white; 
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+            background-color: #920303;
+        }
     }
