@@ -6,6 +6,7 @@ import { CartContext } from '../../context/CartContext'
 import { Timestamp, addDoc, collection, doc, setDoc} from 'firebase/firestore'
 import db from '../../db/db'
 import { Link } from 'react-router-dom'
+import "./Checkout.css"
 
 
 const Checkout = () => {
@@ -68,7 +69,7 @@ const Checkout = () => {
                 <div>
                     <h2>Su Orden se realizó correctamente 😁</h2>
                     <p>Por favor guarde su número de Orden 🧐: {idOrder}</p>
-                    <Link to="/" >Volver al inicio 😜</Link>
+                    <div className="to-home"><Link to="/" ><button className="go-to-home">Volver al inicio 😜</button></Link></div>
                 </div>
                 )
             }
